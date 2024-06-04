@@ -2,9 +2,8 @@
 
 ## Data
 10 OCT images for each of 240 patients.  
-Example  
-<img src='./images/oct.png' width="400" height="200"/>  
-Distribution of data  
+# Example and Distribution
+<img src='./images/oct.png' width="400" height="200"/>
 <img src='./images/distribution.png' width="400" height="200"/>  
 
 ## AUC of 5-Class Multi Classification
