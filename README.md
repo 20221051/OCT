@@ -7,7 +7,7 @@
 
 # AUC of 5-Class Multi Classification
 <img src='./images/auc.png'>  
-5 class  
+5 class  <br/>
 1 : <0.1  
 2 : <=0.3  
 3 : <=0.5  
