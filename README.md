@@ -1,7 +1,8 @@
 ## OCT
 
 ## Data
-10 OCT images for each of 240 patients.
+10 OCT images for each of 240 patients.  
+Example  
 <img src='./images/oct.png' width="400" height="200"/>
 <img src='./images/distribution.png'>
 
