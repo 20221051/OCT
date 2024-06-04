@@ -2,7 +2,7 @@
 
 ## Data
 10 OCT images for each of 240 patients.
-<img src='./images/oct.png' width="200" height="400"/>
+<img src='./images/oct.png' width="400" height="200"/>
 <img src='./images/distribution.png'>
 
 ## AUC of 5-Class Multi Classification
