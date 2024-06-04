@@ -10,6 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelBinarizer
 import os
 
+########################## 함수 생성 ##########################
 class EarlyStopping:
     def __init__(self, patience=10, verbose=False):
         self.patience = patience
@@ -108,7 +109,7 @@ resize = 224
 
 transform = BaseTransform()
 
-# 데이터셋 및 데이터로더 생성
+########################## 데이터셋 및 데이터로더 생성 ##########################
 dataset = CustomDataset( image_files = [f for f in os.listdir(root_dir) if f.endswith('.png')] ,root_dir=root_dir, transform=transform)
 
 len(os.listdir()) # 전체 이미지 개수
@@ -133,16 +134,11 @@ converted_list[np.where(converted_list>2)[0]]=0.7
 import matplotlib.pyplot as plt
 import numpy as np
 
-# 예시 데이터 생성
-data = np.random.randn(1000)
-
-# 히스토그램 그리기
+# 히스토그램 
 plt.hist(converted_list, bins=100, color='blue', alpha=0.7)
 plt.title('VA')
 plt.xlabel('Value')
 plt.ylabel('Frequency')
-
-# 그래프 보여주기
 plt.show()
 
 # 환자 ID 목록 추출
@@ -177,14 +173,14 @@ model.classifier[6] =nn.Sequential(
     nn.Softmax()
 )   # 다중 분류를 위한 출력 뉴런 5개로 변경
 
-# 손실 함수와 최적화 알고리즘 설정
+# loss function 과 optimization 알고리즘 설정
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
 
 # Early Stopping 설정
 early_stopping = EarlyStopping(patience=20, verbose=True)
 
-# 학습 코드
+########################## 학습 코드 ##########################
 num_epochs = 500
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 model.to(device)
@@ -239,7 +235,7 @@ plt.show()
 model.load_state_dict(torch.load('best_model.pth'))
 model.to(device)
 
-# AUC
+########################## AUC ##########################
 from sklearn.metrics import f1_score, roc_auc_score, roc_curve, auc
 
 # ... (이전 코드와 필요한 라이브러리 및 클래스를 import)
@@ -319,7 +315,7 @@ print(f'Test Accuracy: {accuracy * 100:.2f}%')
 print(f'F1 Score: {f1_micro:.2f},{f1_macro:.2f},{f1_weight:.2f}')
 print(f'AUC: {roc_auc:.2f}')
 
-# Grad cam
+########################## Grad cam ##########################
 
 def grad_cam(model, input_tensor, target_class):
     model.eval()
