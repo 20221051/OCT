@@ -1,7 +1,7 @@
-# OCT
 
 # Data
 10 OCT images for each of 240 patients.  
+
 ## Example and Distribution
 <img src='./images/oct.png' width="400" height="200"/> <img src='./images/distribution.png' width="400" height="200"/>  
 
@@ -14,7 +14,7 @@
 4 : <0.8  <br/>
 5 : >=0.8 <br/>
   
-## Results
+# Results
 <img src='./images/gradcam.png'>  <br/>
 
 We used VGG16 model. <br/>
@@ -22,6 +22,8 @@ We used VGG16 model. <br/>
 This can be seen as an encouraging result, <br/>
 as it is not easy for actual doctors to accurately adjust vision by looking only at retinal images. <br/>
 
-In particular, the lower part of the retina is a very important part for vision, <br/>
+In particular, the lower part of the OCT is a very important part for vision, <br/>
 and we confirmed that the model learned well through gradcam.
+
+The code can is available in main.py.
 
