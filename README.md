@@ -2,17 +2,17 @@
 
 ## Data
 10 OCT images for each of 240 patients.
-https://github.com/20221051/OCT/issues/1
-<https://github.com/20221051/OCT/issues/2>
+<img src='./images/oct.png'>
+<img src='./images/distribution.png'>
 
 ## AUC of 5-Class Multi Classification
+<img src='./images/auc.png'>
 <0.1
 <=0.2
 <=0.4
 <=0.7
 >=0.8
-<https://github.com/20221051/OCT/issues/3>
 
 ## Results
-<https://github.com/20221051/OCT/issues/4>
+<img src='./images/gradcam.png'>
 We used VGG16 model
