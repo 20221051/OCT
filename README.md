@@ -34,5 +34,5 @@ as it is not easy for actual doctors to accurately adjust vision by looking only
 In particular, the lower part of the OCT is a very important part for vision, <br/>
 and we confirmed that the model learned well through gradcam.
 
-The code can is available in main.py.
+The code can be available in main.py.
 
