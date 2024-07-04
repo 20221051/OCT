@@ -1,3 +1,12 @@
+# Predicting Visual Acuity Using OCT Images
+Predicting a patient's visual acuity solely based on retinal images is a challenging task.<br/> 
+Therefore, we conducted a study to train a deep learning model that predicts visual acuity using only OCT (Optical Coherence Tomography) images of patients.<br/>
+
+This study aims to: <br/>
+
+Train a deep learning model to predict visual acuity from OCT images. <br/>
+Utilize retinal data from patients with macular degeneration to aid in disease diagnosis and prediction. <br/>
+By leveraging simple imaging techniques, we hope to not only predict visual acuity but also contribute to the diagnosis and prediction of diseases such as macular degeneration. <br/>
 
 # Data
 10 OCT images for each of 240 patients.  
